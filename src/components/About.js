@@ -2,6 +2,7 @@ import React from 'react'
 import "./style.css"
 
 
+
 export default function About(props) {
   return (
     <div className='about' style={{color: props.mode==='dark'?'white':'black' }}>

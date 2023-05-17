@@ -7,6 +7,7 @@ import About from './components/About';
 import Text from './components/Text';
 import {Route, Routes} from 'react-router-dom';
 import Contact from './components/Contact';
+import Error from './components/Error';
   
 
 
@@ -51,7 +52,11 @@ function App() {
           element={<About mode={mode} />} />
         <Route path="Contact"
           element={<Contact mode={mode} />} />
+        <Route path="*"
+          element={<Error/>}/>
+        
         </Routes>
+        
 </div>
   </>
   

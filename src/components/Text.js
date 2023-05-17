@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 
 export default function Text(props) {
 
- 
+    
     const handleUpClick =() =>{
         //console.log("Upper Case Clicked");
         let newText=text.toUpperCase();
@@ -47,6 +47,7 @@ export default function Text(props) {
   const [text, setText] = useState("");
   return (
     <>
+   
     <div className='container my-4' style={{color: props.mode==='dark'?'white':'black' }} >
         <h1>{props.heading}</h1>
       <div className='mb-3'>
