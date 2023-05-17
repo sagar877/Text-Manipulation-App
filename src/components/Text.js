@@ -4,7 +4,6 @@ export default function Text(props) {
 
  
     const handleUpClick =() =>{
-     
         //console.log("Upper Case Clicked");
         let newText=text.toUpperCase();
         setText(newText);
@@ -12,9 +11,8 @@ export default function Text(props) {
     }
     const handleLoClick =() =>{
         //console.log("Lower Case Clicked");
-        
         let new1Text=text.toLowerCase();
-       setText(new1Text);
+        setText(new1Text);
         props.showAlert("Text converted to lower case","Success");
     }
 
@@ -24,28 +22,25 @@ export default function Text(props) {
         props.showAlert("Text cleared","Success");
     }
 
-    const handleReClick =() =>{
-      
-      let newText3=text
-      .split('').reverse().join('');
-      setText(newText3);
-      props.showAlert("Text reversed","Success");
-  }
-  const handleCoClick =() =>{
-    
-    var copyText = document.getElementById("my-box");
+      const handleReClick =() =>{
+        let newText3=text
+        .split('').reverse().join('');
+        setText(newText3);
+        props.showAlert("Text reversed","Success");
+        }
 
-  // Select the text field
-  copyText.select();  
-  navigator.clipboard.writeText(copyText.value);
-  props.showAlert("Text copied","Success");
-  
-}
+      const handleCoClick =() =>{
+        var copyText = document.getElementById("my-box");
+        // Select the text field
+        copyText.select();  
+        navigator.clipboard.writeText(copyText.value);
+        props.showAlert("Text copied","Success");
+        }
 
-   const handleOnChange=(e) =>{
+      const handleOnChange=(e) =>{
         
        setText(e.target.value);
-   }
+       }
 
 
 
@@ -70,7 +65,7 @@ export default function Text(props) {
    <p>{text.split(/\s+/).filter((element)=>{return element.length!==0}).length} words and {text.length} characters</p>
     <p>{0.008 *  text.split(/\s+/).filter((element)=>{return element.length!==0}).length} Minutes read</p>
     <h2>Preview</h2>
-  <p>{text}</p>
+   <p>{text}</p>
     </div>
     </>
   )

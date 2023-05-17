@@ -1,0 +1,47 @@
+.about{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.contact-form{
+    width:500px;
+    margin: auto;
+    border: 2px solid grey;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+   height: 550px;
+   box-shadow: 5px 5px 17px 19px black;
+    
+}
+
+.contact-heading{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#text1{
+    height:100px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#nam{
+    border: 2px solid black;
+    border-radius: 10px;
+    height:40px;
+}
+
+#email{
+    border-radius: 10px;
+    border: 2px solid black;
+    height:40px;
+}
+
+#btn{
+    height:30px;
+    border-radius: 10px;
+}
